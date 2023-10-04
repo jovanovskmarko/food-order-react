@@ -5,7 +5,6 @@ import { useContext } from "react";
 
 const HeaderCartButton = (props) => {
   const cartCtx = useContext(CartContext);
-  console.log(cartCtx);
   const numCartItems = cartCtx.items.reduce((curr, item) => {
     return curr + item.amount;
   }, 0);
